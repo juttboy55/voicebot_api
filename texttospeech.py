@@ -4,7 +4,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
 from pydantic import BaseModel
 
 # Replace with your OpenAI API key
-openai.api_key = 'sk-proj-jccHQRGxu7TXjMvAthN7T3BlbkFJBYiZ0mes5k6sHEA0MQoe'
+openai.api_key = ''
 
 app = FastAPI()
 
