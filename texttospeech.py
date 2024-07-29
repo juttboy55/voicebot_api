@@ -1,7 +1,6 @@
 import openai
 import pyttsx3
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
-from pydantic import BaseModel
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 
 # Replace with your OpenAI API key
 openai.api_key = ''

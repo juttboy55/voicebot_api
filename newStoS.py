@@ -31,6 +31,14 @@ CHUNK = 1024
 RECORD_SECONDS = 3  # Reduce recording time to speed up response
 WAVE_OUTPUT_FILENAME = "output.wav"
 
+
+prompts = {
+    "1": "You are a fast food expert specializing in KFC.",
+    "2": "You are a knowledgeable police officer here to assist with inquiries.",
+    "3": "You are a healthcare professional ready to provide medical advice."
+}
+
+
 async def record_audio():
     audio = pyaudio.PyAudio()
     stream = audio.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
